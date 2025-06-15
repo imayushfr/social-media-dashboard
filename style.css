@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: hsl(230, 17%, 14%);
+    margin: 48px 176px; 
+    font-family: 'Inter', 'Outfit', sans-serif;
+}
+
+header{
+    display: flex;
+    margin-bottom: 60px;
+    /* border: red 1px solid; */
+}
+
+header .theme{
+    margin-left: auto;
+    margin-top: 12px;
+}
+
+header>div>h4{
+    margin-top: 4px;
+}
+
+.box h1{
+    font-size: 64px;
+}
+
+.card{
+    /* border: green 1px solid; */
+    background-color: hsl(228, 28%, 20%);
+    border-top: 4px solid #178FF5;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    padding: 36px 80px 28px;
+    gap: 24px;
+}
+
+.card .up{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.card .up h5{
+    color: hsl(228, 34%, 66%);
+}
+
+.card .down{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.card .down h5{
+    color: hsl(163, 72%, 41%)
+}
+
+.card p{
+    color: hsl(228, 34%, 66%);
+    font-size: 16px;
+}   
+
+@media (max-width: 800px) {
+    header{
+        flex-direction: column;
+        width: fit-content;
+        margin: 48px auto;
+    }
+
+    header .theme{
+        margin-left: unset;
+        margin-top: 20px;
+    }
+
+    header>div{
+        border-bottom: 1px solid hsl(228, 34%, 66%);
+    }
+
+    header>div>h4{
+        margin-bottom: 24px;
+    }
+}
+        
+
