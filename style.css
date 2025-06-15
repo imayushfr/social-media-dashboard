@@ -9,14 +9,13 @@
 body{
     color: white;
     background-color: hsl(230, 17%, 14%);
-    margin: 48px 176px; 
+    margin: 48px 6%; 
     font-family: 'Inter', 'Outfit', sans-serif;
 }
 
 header{
     display: flex;
-    margin-bottom: 60px;
-    /* border: red 1px solid; */
+    margin-bottom: 56px;
 }
 
 header .theme{
@@ -24,16 +23,15 @@ header .theme{
     margin-top: 12px;
 }
 
-header>div>h4{
+header .subheading{
     margin-top: 4px;
 }
 
-.box h1{
-    font-size: 64px;
+.card .followers{
+    font-size: 68px;
 }
 
 .card{
-    /* border: green 1px solid; */
     background-color: hsl(228, 28%, 20%);
     border-top: 4px solid #178FF5;
     border-radius: 4px;
@@ -41,19 +39,22 @@ header>div>h4{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: fit-content;
-    padding: 36px 80px 28px;
-    gap: 24px;
+    padding: 36px 0 32px;
+    width: 300px;
 }
 
 .card .up{
     display: flex;
-    gap: 12px;
+    gap: 8px;
     align-items: center;
 }
 
-.card .up h5{
+.card .username{
     color: hsl(228, 34%, 66%);
+}
+
+.card .middle{
+    margin: 24px 0 28px;
 }
 
 .card .down{
@@ -62,16 +63,27 @@ header>div>h4{
     align-items: center;
 }
 
-.card .down h5{
+.card .update{
     color: hsl(163, 72%, 41%)
+}
+
+.card .downdate{
+    color: hsl(348, 100%, 61%);
 }
 
 .card p{
     color: hsl(228, 34%, 66%);
-    font-size: 16px;
+    font-size: 14px;
 }   
 
-@media (max-width: 800px) {
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    justify-content: center;
+}
+
+@media (max-width: 768px){
     header{
         flex-direction: column;
         width: fit-content;
@@ -80,15 +92,22 @@ header>div>h4{
 
     header .theme{
         margin-left: unset;
-        margin-top: 20px;
+        margin-top: 24px;
     }
 
-    header>div{
+    header div{
         border-bottom: 1px solid hsl(228, 34%, 66%);
     }
 
-    header>div>h4{
+    header .subheading{
         margin-bottom: 24px;
+    }
+
+}
+
+@media (max-width: 1110px){
+    .card{
+        width: 400px;
     }
 }
         
