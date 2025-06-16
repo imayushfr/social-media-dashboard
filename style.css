@@ -33,7 +33,6 @@ header .subheading{
 
 .card{
     background-color: hsl(228, 28%, 20%);
-    border-top: 4px solid #178FF5;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -41,6 +40,27 @@ header .subheading{
     text-align: center;
     padding: 36px 0 32px;
     width: 300px;
+}
+
+.card:hover{
+    background-color: #2C324E;
+}
+
+#facebook{
+    border-top: 4px solid hsl(208, 92%, 53%);
+}
+
+#twitter{
+    border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+#instagram{
+    border-top: 4px solid;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;  /* border-image-slice */
+}
+
+#youtube{
+    border-top: 4px solid hsl(348, 97%, 39%);
 }
 
 .card .up{
@@ -67,22 +87,64 @@ header .subheading{
     color: hsl(163, 72%, 41%)
 }
 
-.card .downdate{
+.card #downdate{
     color: hsl(348, 100%, 61%);
 }
 
 .card p{
     color: hsl(228, 34%, 66%);
-    font-size: 14px;
+    /* font-size: 14px; */
 }   
 
 .container{
     display: flex;
     flex-wrap: wrap;
-    gap: 36px;
+    gap: 40px;
     justify-content: center;
 }
 
+.overview{
+    margin: 56px 0 24px ;
+}
+
+.overview_card{
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+    /* max-width: 400px; */
+}
+
+.overview_card:hover{
+    background-color: #2C324E;
+}
+
+.overview_card .up{
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview_card .down{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline
+}
+
+.arrow{
+    margin-left: auto;
+    margin-right: 4px;
+}
+
+.overview_card h1{
+    font-size: 44px;
+}
+
+.overview_container{
+    display: grid;
+
+}
 @media (max-width: 768px){
     header{
         flex-direction: column;
@@ -105,7 +167,7 @@ header .subheading{
 
 }
 
-@media (max-width: 1110px){
+@media (max-width: 1120px){
     .card{
         width: 400px;
     }
