@@ -31,6 +31,12 @@ header .subheading{
     font-size: 68px;
 }
 
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 36px;
+}
+
 .card{
     background-color: hsl(228, 28%, 20%);
     border-radius: 4px;
@@ -39,7 +45,6 @@ header .subheading{
     align-items: center;
     text-align: center;
     padding: 36px 0 32px;
-    width: 300px;
 }
 
 .card:hover{
@@ -93,15 +98,7 @@ header .subheading{
 
 .card p{
     color: hsl(228, 34%, 66%);
-    /* font-size: 14px; */
 }   
-
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-}
 
 .overview{
     margin: 56px 0 24px ;
@@ -114,7 +111,6 @@ header .subheading{
     flex-direction: column;
     gap: 32px;
     padding: 32px;
-    /* max-width: 400px; */
 }
 
 .overview_card:hover{
@@ -124,6 +120,7 @@ header .subheading{
 .overview_card .up{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .overview_card .down{
@@ -143,9 +140,12 @@ header .subheading{
 
 .overview_container{
     display: grid;
-
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 28px 36px;
 }
-@media (max-width: 768px){
+
+
+@media (max-width: 904px){
     header{
         flex-direction: column;
         width: fit-content;
@@ -163,13 +163,6 @@ header .subheading{
 
     header .subheading{
         margin-bottom: 24px;
-    }
-
-}
-
-@media (max-width: 1120px){
-    .card{
-        width: 400px;
     }
 }
         
